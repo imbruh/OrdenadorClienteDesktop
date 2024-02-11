@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="style.css" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Nildo Eletrônica</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <h3>Clientes</h3>
+        <hr>
+    </div>
+    
+    <div class="conteudo">
+        <div class="row">
+            <div class="input-group flex-nowrap col">
+                <span class="input-group-text" id="addon-wrapping">Nome</span>
+                <input type="text" id="nome" class="form-control">
+            </div>
+
+            <div class="input-group flex-nowrap col">
+                <span class="input-group-text" id="addon-wrapping">Celular</span>
+                <input type="text" id="celular" class="form-control">
+            </div>
+
+            <div class="input-group flex-nowrap col">
+                <span class="input-group-text" id="addon-wrapping">Serviço</span>
+                <input type="text" id="servico" class="form-control">
+            </div>
+        </div>
+
+        <div class="row endereco">
+            <div class="input-group flex-nowrap col">
+                <span class="input-group-text" id="addon-wrapping">Endereço</span>
+                <input type="text" id="endereco" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+        </div>
+
+        <div class="btn-add">
+            <button type="button" id="botao" onclick="adicionar()" class="btn btn-warning">Adicionar</button>
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Celular</th>
+            <th scope="col">Endereço</th>
+            <th scope="col">Serviço</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="conteudoTabela">
+        </tbody>
+      </table>
+<script src="./model/Servico.js"></script>
+<script src="main.js"></script>
+</body>
+
+</html>

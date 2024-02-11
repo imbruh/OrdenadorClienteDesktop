@@ -1,0 +1,21 @@
+.cabecalho {
+    margin-top: 2%;
+}
+
+.cabecalho h3{
+    margin-left: 2%;
+}
+
+.conteudo{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.endereco {
+    padding-top: 1%;
+}
+
+.btn-add {
+    text-align: end;
+    margin-top: 1%;
+}
